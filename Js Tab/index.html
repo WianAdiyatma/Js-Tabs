@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab JS</title>
+    <style>
+      main p {
+        width: 450px;
+      }
+      .box {
+        background-color: black;
+        border-radius: 10px;
+        width: 400px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+      }
+
+      ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 10px;
+      }
+
+      li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .active {
+        text-decoration: underline;
+      }
+
+      .desc {
+        display: none;
+      }
+
+      .displayed {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="list active">First Tab</li>
+        <li class="list">Second Tab</li>
+        <li class="list">Third Tab</li>
+        <li class="list">Fourth Tab</li>
+      </ul>
+    </nav>
+    <main>
+      <p>
+        Clicking each tab should hide the content of other tab and show the
+        content of clicked tab. By default, enable the 1st tab
+      </p>
+      <div class="box">
+        <p class="desc displayed">'First tab content'!</p>
+        <p class="desc">'Second tab content'!</p>
+        <p class="desc">'Third tab content'!</p>
+        <p class="desc">'Fourth tab content'!</p>
+      </div>
+      <p>description goes here...</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
